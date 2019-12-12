@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+double RingS ( double R1, double R2) 
+{
+	double S1, S2;
+	S1=3.14*R1*R1;
+	S2=3.14*R2*R2;
+	return S1-S2;
+}
+
+int main () 
+{
+setlocale(LC_ALL, "Russian");
+
+	double R1, R2; int i;
+	for (i=1; i<4; i++) {
+	cout << "R1, R2: " << endl;
+	cin >> R1 >> R2;
+	if (R1<R2) 
+	{
+	    cout << "Радиус внешнего кольца меньше радиуса внутреннего"<< endl;
+	    
+	} else {
+	    cout << RingS (R1,R2) << endl;
+	    
+	}
+	}
+
+	return 0;
+}
