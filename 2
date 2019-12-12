@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int Sign( double x ) 
+{
+	return x < 0 ? -1 : ((x==0) ? 0 : 1);
+}
+
+int main () 
+{
+	double A, B, C;
+	cout << "A=";
+	cin >> A; 
+	cout << "B=";
+	cin >> B;
+	C=Sign(A)+Sign(B);
+	cout << C << endl;
+	return 0;
+
+}
