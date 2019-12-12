@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int Quarter (int x, int y) 
+{
+	return (x>0 && y>0) ? 1 : ((x<0 && y<0) ? 3 : (x<0 && y>0) ? 2 : 4 );
+}
+
+int main () 
+{
+setlocale(LC_ALL, "Russian");
+	int x, y, i;
+	for (i=1; i<4; i++) {
+		cout << "X=";
+		cout << "Y=";
+		cin >> x;
+		cin >> y;
+		cout << "Координатный угол: " << Quarter(x, y) << endl;
+	}
+	return 0;
+}
